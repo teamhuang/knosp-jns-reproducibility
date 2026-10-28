@@ -1,0 +1,9 @@
+cohort,adjustment,model,n,est,lo,hi,p,alpha,converged
+Taiwan,Knosp + previous surgery (primary),NB2 joint MLE,100,1.243,1.119,1.38,0.0,0.317,True
+Taiwan,Knosp + previous surgery (primary),log(LOS) OLS HC3,100,1.122,1.016,1.239,0.023,,True
+Taiwan,Knosp + previous surgery (primary),Poisson HC1 sandwich,100,1.27,1.032,1.562,0.024,,True
+Taiwan,Knosp + previous surgery + log2(volume) (sensitivity),NB2 joint MLE,100,1.402,1.172,1.677,0.0,0.308,True
+Spain,Knosp + previous surgery (primary),NB2 joint MLE,100,0.982,0.897,1.075,0.697,0.0,True
+Spain,Knosp + previous surgery (primary),log(LOS) OLS HC3,100,0.983,0.927,1.043,0.565,,True
+Spain,Knosp + previous surgery (primary),Poisson HC1 sandwich,100,0.982,0.923,1.045,0.569,,True
+Spain,Knosp + previous surgery + log2(volume) (sensitivity),NB2 joint MLE,100,0.97,0.867,1.086,0.599,0.0,True

@@ -1,0 +1,23 @@
+# --- Do NOT commit patient-level data (raw or derived analytic tables) ---
+data/*.xlsx
+data/*.sav
+data/*.csv
+!data/DATA_MANIFEST.md
+
+# --- Python caches / temp ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.valtmp/
+.figtmp/
+*.log
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# NOTE: results/ and figures/ hold AGGREGATE, de-identified model outputs and
+# figures and ARE intentionally committed so every reported number can be checked
+# without running the pipeline.

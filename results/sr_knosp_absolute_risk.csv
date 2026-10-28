@@ -1,0 +1,4 @@
+cohort,outcome,knosp_3_4_events,knosp_3_4_n,risk_3_4,risk_3_4_wilson,knosp_0_2_events,knosp_0_2_n,risk_0_2,risk_0_2_wilson,risk_difference,rd_ci,RR_mod_poisson,RR_ci,RR_p
+Taiwan (MRI residual),residual,26,43,0.605,0.605 (0.456-0.736),3,57,0.053,0.053 (0.018-0.144),0.552,0.378 to 0.688,11.488,3.72-35.479,0.0
+Taiwan (subtotal EOR),subtotal_eor,22,43,0.512,0.512 (0.368-0.654),1,57,0.018,0.018 (0.003-0.093),0.494,0.331 to 0.637,29.163,4.089-207.974,0.0008
+Spain (incomplete resection),residual,39,45,0.867,0.867 (0.738-0.937),12,55,0.218,0.218 (0.129-0.344),0.648,0.469 to 0.762,3.972,2.378-6.636,0.0

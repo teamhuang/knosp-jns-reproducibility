@@ -1,0 +1,27 @@
+Attribution 4.0 International (CC BY 4.0)
+
+This repository (analysis code and aggregate model outputs) is licensed under the
+Creative Commons Attribution 4.0 International license.
+
+To view a copy of this license, visit:
+    https://creativecommons.org/licenses/by/4.0/legalcode
+
+You are free to:
+  * Share — copy and redistribute the material in any medium or format.
+  * Adapt — remix, transform, and build upon the material for any purpose,
+    including commercial, so long as you give appropriate attribution.
+
+Under the following terms:
+  * Attribution — You must give appropriate credit to the authors of the
+    associated manuscript, provide a link to the license, and indicate if
+    changes were made. You may do so in any reasonable manner, but not in any
+    way that suggests the licensor endorses you or your use.
+
+IMPORTANT — underlying data are NOT covered by this license:
+  * The two source cohorts are third-party patient-level datasets released under
+    their own licences and must be obtained from their original repositories:
+      - Taiwan: figshare, doi:10.6084/m9.figshare.15042771
+      - Spain:  Mendeley Data, doi:10.17632/kb55bvtv3y.1 (CC BY 4.0)
+    Redistributing the individual-level data remains subject to those licences.
+  * No individual-level patient data are included in this repository; see
+    data/DATA_MANIFEST.md.

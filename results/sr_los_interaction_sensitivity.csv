@@ -1,0 +1,6 @@
+est,lo,hi,p,n,alpha,tw_slope,sp_slope,dataset,model
+0.817,0.704,0.947,0.008,200,0.203,1.227,1.002,FULL (n=200),NB2 interaction
+0.924,0.825,1.034,0.17,198,0.024,1.068,0.987,Taiwan LOS>30d excluded,NB2 interaction
+0.85,0.745,0.97,0.016,199,0.115,1.171,0.995,Taiwan drop 1 longest (90d),NB2 interaction
+0.89,0.799,0.992,0.035,200,,,,FULL,log(LOS) OLS HC3 interaction
+0.928,0.847,1.017,0.109,198,,,,Taiwan LOS>30d excluded,log(LOS) OLS HC3 interaction

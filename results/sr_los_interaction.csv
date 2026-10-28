@@ -1,0 +1,3 @@
+cohort,model,n,term,est,lo,hi,p,alpha,lrt,lrt_p
+pooled (Taiwan+Spain),NB2 joint MLE,200,Knosp x cohort (ratio-of-IRRs),0.817,0.704,0.947,0.008,0.203,7.063,0.008
+pooled (Taiwan+Spain),Poisson HC1 sandwich,200,Knosp x cohort (ratio-of-IRRs),0.804,0.663,0.975,0.027,,,

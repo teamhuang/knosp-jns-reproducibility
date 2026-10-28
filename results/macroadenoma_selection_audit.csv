@@ -1,0 +1,4 @@
+approach,rows_in_analytic,macro_by_size_cat,macro_by_maxdiam_gt10mm,size_micro,size_macro,size_giant,size_huge,source_reported,reproducible
+one_hand,50,32,32,18,25,5,2,two_hand 48,48 (exact)
+two_hand,50,48,48,2,26,21,1,one_hand 30,32 (+2 vs source; not reproducible from public vars)
+TOTAL,100,80,80,20,51,26,3,total 78,80

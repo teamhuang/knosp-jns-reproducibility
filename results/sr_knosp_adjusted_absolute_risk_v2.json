@@ -1,0 +1,54 @@
+{
+  "Taiwan_residual": {
+    "n": 100,
+    "events": 29,
+    "n_low_band": 57,
+    "n_high_band": 43,
+    "prev_prevalence_std": 0.17,
+    "knosp_OR": 3.9705,
+    "prev_OR": 8.793,
+    "adj_risk_low": 0.1005,
+    "adj_risk_low_CI": [
+      0.0308,
+      0.1791
+    ],
+    "adj_risk_high": 0.5282,
+    "adj_risk_high_CI": [
+      0.3843,
+      0.6827
+    ],
+    "adj_RD": 0.4277,
+    "adj_RD_CI": [
+      0.2679,
+      0.5986
+    ],
+    "boot_success": "1000/1000",
+    "estimand": "model-adjusted average risk within each Knosp band, previous surgery standardized to cohort prevalence; E[expit(Xb)] over individuals (not expit of band-mean)"
+  },
+  "Spain_incomplete": {
+    "n": 100,
+    "events": 51,
+    "n_low_band": 55,
+    "n_high_band": 45,
+    "prev_prevalence_std": 0.2,
+    "knosp_OR": 5.6886,
+    "prev_OR": 3.7014,
+    "adj_risk_low": 0.2455,
+    "adj_risk_low_CI": [
+      0.1342,
+      0.3598
+    ],
+    "adj_risk_high": 0.842,
+    "adj_risk_high_CI": [
+      0.7508,
+      0.9254
+    ],
+    "adj_RD": 0.5965,
+    "adj_RD_CI": [
+      0.4599,
+      0.7303
+    ],
+    "boot_success": "1000/1000",
+    "estimand": "model-adjusted average risk within each Knosp band, previous surgery standardized to cohort prevalence; E[expit(Xb)] over individuals (not expit of band-mean)"
+  }
+}

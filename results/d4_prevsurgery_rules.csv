@@ -1,0 +1,5 @@
+rule,n,knosp_OR,knosp_lo,knosp_hi,knosp_p,prev_OR,prev_lo,prev_hi,prev_p
+"PRIMARY: authors grouped IQPrevia_Grupo (n=100, 20 yes)",100,5.689,3.656,9.575,2.0583686905344716e-12,3.701,1.374,10.826,0.04240921710709099
+"Sens1: documented codes only (n=95, 15 yes, 5 dropped)",95,5.553,3.56,9.371,6.521464981743984e-12,3.432,1.239,10.237,0.062541648628268
+"Sens2: ambiguous codes 2/3 recoded to No (n=100, 15 yes)",100,5.954,3.83,10.018,2.114408131400742e-13,3.352,1.198,10.113,0.0696361512392949
+"Sens3: Knosp-only, no previous surgery (n=100)",100,5.926,3.838,9.872,1.0981605476849684e-13,,,,

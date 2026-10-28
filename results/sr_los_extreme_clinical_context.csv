@@ -1,0 +1,3 @@
+knosp,prev_surgery,los_days,op_time_min,extent_of_resection,intraop_csf,csf_leakage,intracranial_haemorrhage,diabetes_insipidus_gt1m,second_operation,other_complication,tumour_size
+3.0,0.0,90.0,600.0,Total,1.0,1.0,1.0,0.0,ICH and CSF,0,macro
+4.0,0.0,68.0,122.0,Total,0.0,0.0,1.0,0.0,Check bleeding,Hydrocephalus,giant

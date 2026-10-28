@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below and also cite the source cohort datasets listed under data/DATA_MANIFEST.md."
+title: "Cross-Cohort Reproducibility of Knosp Grade Associations With Incomplete Resection After Pituitary Surgery: analysis code and canonical outputs"
+abstract: >-
+  Reproducible analysis pipeline (STROBE-reported secondary analysis) for two
+  independent, publicly available, de-identified pituitary-surgery cohorts
+  (Taiwan index; Spain replication). Firth penalized logistic regression of
+  Knosp grade on incomplete resection, model-adjusted absolute risk by
+  individual-level g-computation with a 1000-replicate patient bootstrap, and
+  exploratory negative-binomial length-of-stay models with Knosp x cohort
+  interaction and leave-one-out influence diagnostics.
+authors:
+  - family-names: Huang
+    given-names: Jianhuang
+    email: teamhuang@sina.com
+  - family-names: Lin
+    given-names: Yangyang
+  - family-names: Wang
+    given-names: Qixiu
+  - family-names: Chen
+    given-names: Jianning
+    email: cjn2006@sohu.com
+version: "1.0.0"
+date-released: 2026-10-28
+license: CC-BY-4.0
+repository-code: "https://github.com/teamhuang/knosp-jns-reproducibility"
+keywords:
+  - pituitary adenoma
+  - Knosp grade
+  - incomplete resection
+  - Firth logistic regression
+  - reproducibility
+  - secondary analysis
+  - STROBE

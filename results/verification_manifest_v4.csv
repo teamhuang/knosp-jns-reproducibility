@@ -1,0 +1,37 @@
+quantity,reported,recomputed,abs_diff,pass_,note,engine
+Taiwan analytic n,100.0,100.0,0.0,True,reproduced from raw,Python re-run from raw
+Taiwan residual events,29.0,29.0,0.0,True,reproduced from raw,Python re-run from raw
+Taiwan prev_surgery,17.0,17.0,0.0,True,reproduced from raw,Python re-run from raw
+Taiwan Knosp grade-0 n,12.0,12.0,0.0,True,reproduced from raw,Python re-run from raw
+Taiwan Knosp grade-4 n,15.0,15.0,0.0,True,reproduced from raw,Python re-run from raw
+Taiwan Knosp OR,3.97,3.9705,0.0005,True,reproduced from raw,Python re-run from raw
+Taiwan Knosp OR lo,2.22,2.5968,0.3768,False,logistf penalized profile-likelihood interval is the canonical reported value; Python profile-CI is an approximation (narrower) and is NOT used for reported intervals,R logistf (canonical)
+Taiwan Knosp OR hi,8.4,6.6014,1.7986,False,logistf penalized profile-likelihood interval is the canonical reported value; Python profile-CI is an approximation (narrower) and is NOT used for reported intervals,R logistf (canonical)
+Taiwan prev OR,8.79,8.793,0.003,True,reproduced from raw,Python re-run from raw
+Taiwan prev OR lo,2.17,3.2157,1.0457,False,logistf penalized profile-likelihood interval is the canonical reported value; Python profile-CI is an approximation (narrower) and is NOT used for reported intervals,R logistf (canonical)
+Taiwan prev OR hi,46.03,27.2548,18.7752,False,logistf penalized profile-likelihood interval is the canonical reported value; Python profile-CI is an approximation (narrower) and is NOT used for reported intervals,R logistf (canonical)
+Spain analytic n,100.0,100.0,0.0,True,reproduced from raw,Python re-run from raw
+Spain incomplete events,51.0,51.0,0.0,True,reproduced from raw,Python re-run from raw
+Spain prev_grouped,20.0,20.0,0.0,True,reproduced from raw,Python re-run from raw
+Spain Knosp grade-0 n,1.0,1.0,0.0,True,reproduced from raw,Python re-run from raw
+Spain Knosp OR,5.69,5.6886,0.0014,True,reproduced from raw,Python re-run from raw
+Spain Knosp OR lo,3.1,3.6562,0.5562,False,logistf penalized profile-likelihood interval is the canonical reported value; Python profile-CI is an approximation (narrower) and is NOT used for reported intervals,R logistf (canonical)
+Spain Knosp OR hi,12.21,9.575,2.635,False,logistf penalized profile-likelihood interval is the canonical reported value; Python profile-CI is an approximation (narrower) and is NOT used for reported intervals,R logistf (canonical)
+Pooled common-slope Knosp OR,5.04,5.0391,0.0009,True,reproduced from raw,Python re-run from raw
+Pooled lo,3.23,3.6485,0.4185,False,logistf penalized profile-likelihood interval is the canonical reported value; Python profile-CI is an approximation (narrower) and is NOT used for reported intervals,R logistf (canonical)
+Pooled hi,8.55,7.2542,1.2958,False,logistf penalized profile-likelihood interval is the canonical reported value; Python profile-CI is an approximation (narrower) and is NOT used for reported intervals,R logistf (canonical)
+Pooled interaction OR,1.49,1.4906,0.0006,True,reproduced from raw,Python re-run from raw
+Interaction lo,0.57,0.76,0.19,False,logistf penalized profile-likelihood interval is the canonical reported value; Python profile-CI is an approximation (narrower) and is NOT used for reported intervals,R logistf (canonical)
+Interaction hi,3.93,2.9358,0.9942,False,logistf penalized profile-likelihood interval is the canonical reported value; Python profile-CI is an approximation (narrower) and is NOT used for reported intervals,R logistf (canonical)
+Taiwan LOS NB2 IRR,1.24,1.2427,0.0027,True,reproduced from raw,Python re-run from raw
+Taiwan LOS lo,1.12,1.1191,0.0009,True,reproduced from raw,Python re-run from raw
+Taiwan LOS hi,1.38,1.38,0.0,True,reproduced from raw,Python re-run from raw
+Spain LOS NB2 IRR,0.98,0.9821,0.0021,True,reproduced from raw,Python re-run from raw
+Spain LOS lo,0.9,0.8968,0.0032,True,reproduced from raw,Python re-run from raw
+Spain LOS hi,1.08,1.0755,0.0045,True,reproduced from raw,Python re-run from raw
+Taiwan adjusted RD (pp),42.8,42.7688,0.0312,True,reproduced from raw,Python re-run from raw
+Taiwan adj RD CI lo,26.8,26.7934,0.0066,True,reproduced from raw,Python re-run from raw
+Taiwan adj RD CI hi,59.9,59.8592,0.0408,True,reproduced from raw,Python re-run from raw
+Spain adjusted RD (pp),59.7,59.6481,0.0519,True,reproduced from raw,Python re-run from raw
+Spain adj RD CI lo,46.0,45.9938,0.0062,True,reproduced from raw,Python re-run from raw
+Spain adj RD CI hi,73.0,73.0341,0.0341,True,reproduced from raw,Python re-run from raw

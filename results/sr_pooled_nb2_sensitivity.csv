@@ -1,0 +1,9 @@
+dataset,model,est,lo,hi,p,n,alpha,converged,tw_gt30_excluded,n_tw,n_sp
+FULL,A: +Knosp*cohort,0.817,0.704,0.947,0.008,200,0.203,True,False,,
+FULL,B: +prev*cohort too,0.788,0.677,0.918,0.002,200,0.198,True,False,,
+FULL,D: Poisson-HC1 +both,0.773,0.623,0.96,0.02,200,,True,False,,
+FULL,C: separate NB2 (diff z-test),0.79,0.688,0.908,0.001,200,"tw=0.317,sp=0.0",True,False,100.0,100.0
+EXCL_TW_gt30,A: +Knosp*cohort,0.924,0.825,1.034,0.17,198,0.024,True,True,,
+EXCL_TW_gt30,B: +prev*cohort too,0.916,0.815,1.03,0.143,198,0.024,True,True,,
+EXCL_TW_gt30,D: Poisson-HC1 +both,0.916,0.823,1.018,0.104,198,,True,True,,
+EXCL_TW_gt30,C: separate NB2 (diff z-test),0.917,0.815,1.031,0.146,198,"tw=0.057,sp=0.0",True,True,98.0,100.0

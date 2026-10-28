@@ -1,0 +1,141 @@
+{
+  "specification": "pooled NB2: los ~ Knosp + prev + cohort + Knosp:cohort (TW=0, ES=1)",
+  "full_sample": {
+    "est": 0.817,
+    "lo": 0.704,
+    "hi": 0.947,
+    "p": 0.008,
+    "n": 200,
+    "tw_slope": 1.227,
+    "sp_slope": 1.002
+  },
+  "taiwan_loo": {
+    "n_deletions": 100,
+    "ratio_range": [
+      0.793,
+      0.872
+    ],
+    "p_range": [
+      0.002,
+      0.059
+    ],
+    "n_deletions_p_lt_0.05": 99,
+    "tw_knosp_irr_range": [
+      1.157,
+      1.28
+    ]
+  },
+  "spain_loo": {
+    "n_deletions": 100,
+    "ratio_range": [
+      0.798,
+      0.826
+    ],
+    "p_range": [
+      0.003,
+      0.012
+    ],
+    "n_deletions_p_lt_0.05": 100
+  },
+  "both_extremes_dropped": {
+    "n": 198,
+    "ratio_irr": 0.92,
+    "lo": 0.83,
+    "hi": 1.03,
+    "p": 0.17,
+    "tw_slope": 1.068,
+    "sp_slope": 0.987
+  },
+  "extreme_records_los_gt30": [
+    {
+      "los": 68.0,
+      "knosp": 4,
+      "loo_ratio": 0.814,
+      "loo_p": 0.007
+    },
+    {
+      "los": 90.0,
+      "knosp": 3,
+      "loo_ratio": 0.85,
+      "loo_p": 0.016
+    }
+  ],
+  "top5_taiwan_single_deletions": [
+    {
+      "deleted_los": 8.0,
+      "deleted_knosp": 4.0,
+      "ratio_irr": 0.872,
+      "p": 0.059
+    },
+    {
+      "deleted_los": 90.0,
+      "deleted_knosp": 3.0,
+      "ratio_irr": 0.85,
+      "p": 0.016
+    },
+    {
+      "deleted_los": 18.0,
+      "deleted_knosp": 0.0,
+      "ratio_irr": 0.793,
+      "p": 0.002
+    },
+    {
+      "deleted_los": 11.0,
+      "deleted_knosp": 0.0,
+      "ratio_irr": 0.807,
+      "p": 0.005
+    },
+    {
+      "deleted_los": 4.0,
+      "deleted_knosp": 4.0,
+      "ratio_irr": 0.81,
+      "p": 0.006
+    }
+  ],
+  "endpoint_concordance_partA": {
+    "n": 100,
+    "residual_events": 29,
+    "subtotal_events": 23,
+    "agreement": 0.94,
+    "kappa": 0.845,
+    "discordant_n": 6,
+    "direction": "all discordant records are residual=1 / subtotal=0 (subtotal nested in residual)",
+    "discordant_by_grade": {
+      "1": 2,
+      "3": 3,
+      "4": 1
+    },
+    "discordant_records": [
+      [
+        "1.0",
+        "Near Total",
+        "8.0"
+      ],
+      [
+        "3.0",
+        "Total",
+        "0.0"
+      ],
+      [
+        "1.0",
+        "Near Total",
+        "3.0"
+      ],
+      [
+        "3.0",
+        "Total",
+        "10.0"
+      ],
+      [
+        "4.0",
+        "Near Total",
+        "5.0"
+      ],
+      [
+        "3.0",
+        "Near Total",
+        "10.0"
+      ]
+    ]
+  }
+}
