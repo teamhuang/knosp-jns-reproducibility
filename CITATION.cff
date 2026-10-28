@@ -8,7 +8,10 @@ abstract: >-
   Knosp grade on incomplete resection, model-adjusted absolute risk by
   individual-level g-computation with a 1000-replicate patient bootstrap, and
   exploratory negative-binomial length-of-stay models with Knosp x cohort
-  interaction and leave-one-out influence diagnostics.
+  interaction and leave-one-out influence diagnostics. v1.0.1 additionally
+  includes the age/sex-adjusted resection Firth models (Supplementary Table S8)
+  and the binary LOS-threshold Firth models (Supplementary Table S4 lower
+  block) added during JNS revision.
 authors:
   - family-names: Huang
     given-names: Jianhuang
@@ -20,7 +23,7 @@ authors:
   - family-names: Chen
     given-names: Jianning
     email: cjn2006@sohu.com
-version: "1.0.0"
+version: "1.0.1"
 date-released: 2026-10-28
 license: CC-BY-4.0
 repository-code: "https://github.com/teamhuang/knosp-jns-reproducibility"

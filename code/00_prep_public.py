@@ -46,6 +46,28 @@ for c in ['Knosp', 'prev_surgery', 'volume_cm3', 'residual', 'subtotal_eor',
           'incomplete_eor', 'los_days', 'Age', 'Hardy']:
     d3[c] = pd.to_numeric(d3[c], errors='coerce')
 
+# Sex / gender: propagate a harmonised 1=male, 0=female column so the age/sex
+# sensitivity Firth models (manuscript Supplementary Table S8) are reproducible
+# from this pipeline. The PLOS ONE workbook carries sex under one of several
+# plausible headers; we take the first that is present.
+_SEX_ALIASES = ['Sex', 'sex', 'GENDER', 'Gender', 'gender', 'M/F', 'Gen']
+_raw_sex = next((c for c in _SEX_ALIASES if c in d3.columns), None)
+if _raw_sex is not None:
+    _s = d3[_raw_sex]
+    if _s.dtype == object:
+        _s = _s.astype(str).str.strip().str.upper()
+        d3['male'] = np.where(_s.isin(['M', 'MALE', '1', '1.0']), 1.0,
+                     np.where(_s.isin(['F', 'FEMALE', '0', '0.0']), 0.0, np.nan))
+    else:
+        _sn = pd.to_numeric(_s, errors='coerce')
+        d3['male'] = np.where(_sn.isin([1]), 1.0, np.where(_sn.isin([0]), 0.0, np.nan))
+    print(f'Sex column detected: {_raw_sex!r}; male n = {int(np.nansum(d3["male"]))}')
+else:
+    d3['male'] = np.nan
+    print('WARNING: no sex/gender column found in raw Taiwan workbook; '
+          'd3_clean.csv `male` will be NaN and the D3 age/sex Firth model in '
+          'code/44_age_sex_and_threshold_sensitivity.R will be skipped.')
+
 d3['log2vol'] = np.log2(d3['volume_cm3'])
 d3['Knosp_high'] = np.where(d3['Knosp'].isna(), np.nan, (d3['Knosp'] >= 3).astype(float))
 

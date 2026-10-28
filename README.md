@@ -55,7 +55,8 @@ profile likelihood); the Python Firth routine reproduces the point estimates to
 │   ├── 40_fig1_two_cohort.py # Figure 1 schematic
 │   ├── 41_adjusted_absolute_risk_v2.py       # corrected g-computation adjusted absolute risk
 │   ├── 42_figures_v4.py      # Figures 1–3 from canonical result tables
-│   └── 43_verify_from_raw.py # CLEAN-ROOM verifier: reproduces headline numbers from raw
+│   ├── 43_verify_from_raw.py # CLEAN-ROOM verifier: reproduces headline numbers from raw
+│   └── 44_age_sex_and_threshold_sensitivity.R  # Supp. Tables S4 threshold + S8 age/sex Firth (revision)
 ├── results/                  # canonical AGGREGATE model outputs (safe to publish; no patient rows)
 ├── figures/                  # Figure1–3 (PNG 300dpi + vector PDF) and figS6
 ├── data/                     # DATA_MANIFEST.md only (raw files are public + separately licensed)
@@ -108,6 +109,7 @@ python code/09_d4_domain_separation.py
 python code/33_pooled_nb2_and_mi_sensitivity.py
 python code/38_endpoint_concordance_and_loo.py
 python code/41_adjusted_absolute_risk_v2.py
+Rscript code/44_age_sex_and_threshold_sensitivity.R
 
 # 4) figures
 python code/40_fig1_two_cohort.py
@@ -156,6 +158,33 @@ never used for a reported interval.
 - **Adjusted absolute risk uses the corrected estimand** (individual-level
   standardization `E[expit(Xβ)]`, previous surgery standardized to cohort
   prevalence), not the expit of a band mean — `code/41_adjusted_absolute_risk_v2.py`.
+
+## Revision analyses (post-v1.0.0)
+
+Two supplementary-table analyses were added after the initial v1.0.0 tag and are
+included in v1.0.1:
+
+- **`code/44_age_sex_and_threshold_sensitivity.R`** — (A) Firth models of
+  incomplete resection additionally adjusted for age (per 10-year increase) and
+  sex (manuscript Supplementary Table S8; Taiwan OR 4.08, Spain OR 7.53), and
+  (B) Firth models of binary LOS thresholds (>7 d Taiwan, >4 d Spain) adjusted
+  for previous surgery and for age+sex (manuscript Supplementary Table S4 lower
+  block). Engine, seed, and CI/P method are identical to the canonical
+  `13_canonical_firth.R` fits.
+- **`code/00_prep_public.py`** now propagates a harmonised `male` (1=male,
+  0=female) column into `data/d3_clean.csv`, detecting the sex/gender header
+  across common raw variants (Sex, Gender, M/F, Gen). If none is found the
+  script warns and leaves `male` as `NaN`; script `44` then skips the Taiwan
+  age/sex fit and prints the reason.
+
+Because the two public cohorts are third-party and are **not redistributed
+here**, `results/sr_age_sex_threshold_sensitivity.csv` committed with v1.0.1
+carries only the **published Knosp-term values** quoted in the manuscript as a
+reference output; running `code/44_age_sex_and_threshold_sensitivity.R` against
+the raw files (after `00_prep_public.py` and `08_d4_prep.py`) regenerates the
+full coefficient table and overwrites the reference file. Users should treat
+the reference rows as a check-value snapshot, not as a substitute for the
+authoritative `logistf` re-fit.
 
 ## Figures
 
